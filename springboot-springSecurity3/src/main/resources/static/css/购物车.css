@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+/*页面缩放宽度-----------------------------------------------*/
+.divkd{
+	width:1349px;
+	position:absolute;
+	margin:auto;
+}
+/*顶部------------------------------------------------*/
+#divlog{
+	height:100px;
+	background:#FFF;
+}
+/*顶部导航*/
+.divlist{
+	margin-left:290px;
+	position:absolute;
+	top:10px;
+	z-index:999;/*最上层*/
+}
+/*二级标题的样式规定ul*/
+.divlist ul li ul{
+	visibility:hidden;/*元素不可见*/
+	-webkit-backface-visibility:hidden;/* Chrome 和 Safari */
+	-moz-backface-visibility:hidden;/* Firefox */
+	-ms-backface-visibility:hidden;/* Internet Explorer */
+    position:absolute;
+	opacity:0;
+	-webkit-opacity:0;
+	transition:all .5s ease-in-out;
+	z-index:999;/*最上层*/
+}
+/*二级标题的样式规定li*/
+.divlist ul li ul li{
+	margin-left:8px;
+	width:100px;
+	height:40px;
+	color:#979797;
+	background-color:#FFF;
+	z-index:999;/*最上层*/
+}
+/*一级标题鼠标放上去二级标题显示*/
+.divlist ul li:hover ul,
+.divlist ul a:hover ul{
+	visibility:visible;
+	opacity:1;
+}
+/*一级标题鼠标放上去二级标题规定样式*/
+.divlist ul li:hover li,
+.divlist ul li:hover li a{
+	color:#979797;
+	background-color:#FFF;
+}
+/*二级标题鼠标放上去效果*/
+.divlist ul li ul li:hover a,
+.divlist ul li ul li:hover{
+	color:#000;
+	background-color:#FFF
+}
+
+/*顶部logo*/
+#divlogotop{
+	position:absolute;
+	right:200px;
+	top:6px;
+}
+
+/*第二个灰色背景------------------------------------------*/
+
+#divlogbottom{
+	height:300px;
+	background:#fdfdfc;
+	margin-top:40px;
+}
+
+/*内容-----------------------------------------------*/
+#liepic{
+	height:300px;
+	position:absolute;
+	left:200px;
+	right:200px;
+}
+.diva{
+	border-top:#e6e6e6 solid 1px;
+	border-bottom:#e6e6e6 solid 1px;
+	border-left:#e6e6e6 solid 1px;
+	border-right:#e6e6e6 solid 1px;
+	height:50px;
+	background:#e6e6e6;
+	text-align:center;
+}
+.divb{
+	border-top:#e6e6e6 solid 1px;
+	border-bottom:#e6e6e6 solid 1px;
+	height:150px;
+	width:947px;
+	cursor:pointer;
+}
+.divc{
+	float:left;
+	padding:2.7em;/*内边距*/
+}
+#deleteAll{
+	float:right;
+	background-color:#333333;
+	color:#FFF;
+	border:0px;
+	width:120px;
+	height:50px;
+	line-height:17.5px;
+	/*position:absolute;*/
+}
+#deleteAll:hover{
+	background-color:#800000;
+	cursor:pointer;
+}
+#buyAll{
+	background-color:#333333;
+	color:#FFF;
+	border:5px;
+	height:50px;
+	line-height:17.5px;
+	width:947px;
+	cursor:pointer;
+}
+#buyAll:hover{
+	background-color:#800000;
+	cursor:pointer;
+}
+
+
+/*底部--------------------------------------------------*/
+#divbottom{
+	height:160px;
+	background-color:#FFF;	
+}
+/*返回顶部-----------------------------------------------*/
+#divgotop{
+	width:50px;
+	height:50px;
+	position:fixed;
+	right:90px;
+	top:550px;
+	z-index:999;/*最上层*/
+	cursor:pointer;
+}
+
+/*盒子分界线---------------------------------------------*/
+ul{
+	list-style:none;
+}
+li{
+	float:left;
+	letter-spacing:-1px;
+}
+a{
+	text-decoration:none;
+	display:block;
+	padding:0 10px;
+	margin:10px;
+	line-height:20px;
+	color:#979797;
+	text-align:center;
+	font-family:Candara;
+	font-size:16px;
+	padding:0px 1px;
+}
+a:hover{/*鼠标滑过样式*/
+	color:#000;
+}
+c{
+	font-family:"微软雅黑";
+	font-weight:bold;
+	font-size:25px;
+	color:#585e5c;
+	position:absolute;
+	line-height:50px;
+	left:20px;
+}
+c:hover{
+	color:#FFF;
+	cursor:pointer;
+}
+p{
+	font-family:"楷体";
+	font-weight:bold;
+	font-size:14px;
+	color:#888888;
+	position:absolute;
+	top:50px;
+	margin-left:300px;
+}
+.gwc{
+	font-family:"微软雅黑";
+	font-weight:bold;
+	font-size:20px;
+	color:#585e5c;
+	position:absolute;
+	line-height:50px;
+	left:200px;
+	right:200px;
+}
+.x1{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#585e5c;
+	width:400px;
+	left:360px;
+	top:80px;
+}
+.x2{
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#999;
+	left:360px;
+	top:110px;
+}
+.x3{
+	font-family:Candara;
+	color:#914602;
+	font-size:20px;
+	left:360px;
+	top:150px;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mokusei | Select item</title>
+<link rel="stylesheet" href="../css/select.css"/>
+</head>
+
+<body>
+<body style="background:#fdfdfc">
+<!--顶部------------------------------------------------>
+<div id="divlog">
+<div class="divkd">
+<img src="../pictures/logo top.png" width="180" height="80" id="divlogotop"/>
+
+<div class="divlist">
+<ul>
+<li><a href="Top page.html">>&nbsp;&nbsp;<u>Top&nbsp;&nbsp;page</u></a></li>
+<li><a href="concept.html">>&nbsp;&nbsp;<u>Concept</u></a></li>
+<li><a href="select.html">>&nbsp;&nbsp;<u>Select&nbsp;&nbsp;item</u></a>
+<ul>
+<li><a href="#" style="font-size:5px">家具</a></li><br>
+<li><a href="#" style="font-size:5px">家电</a></li><br>
+<li><a href="#" style="font-size:5px">杂货</a></li><br>
+<li><a href="#" style="font-size:5px">装饰品</a></li><br>
+<li><a href="#" style="font-size:5px">文具</a></li><br>
+</ul>
+</li>
+<li><a href="contact.html">>&nbsp;&nbsp;<u>Contact</u></a>
+<ul>
+<li><a href="contact.html" style="font-size:5px">官方电话</a></li><br>
+<li><a href="contact.html" style="font-size:5px">E-mail</a></li><br>
+<li><a href="contact.html" style="font-size:5px">客服</a></li><br>
+</ul>
+</li>
+<li><a href="個人情報.html">>&nbsp;&nbsp;<u>My&nbsp;&nbsp;space</u></a>
+<ul>
+<li><a href="個人情報.html" style="font-size:5px">个人主页</a></li><br>
+<li><a href="#" style="font-size:5px">收藏夹</a></li><br>
+</ul>
+</li>
+</ul>
+</div>
+
+<p>心事寄予北风，我们全心全意，寄予原木制作。</p>
+
+</div>
+</div>
+<!------------------------------------------------------>
+<!--第二个灰色背景----------------------------------------->
+<div id="divlogbottom">
+
+<div class="divtip">&nbsp; &nbsp;所有的商品</div>
+<div class="arrow"></div>
+<hr style="width:800px; position:absolute; right:230px; top:152px; border-top:1px solid #e7e7e7">
+<img src="../pictures/搜索.png" id="search" onClick="searchbox(1)" />
+<div class="searchbox" id="searchbox">
+<img src="../pictures/搜索.png" id="search1" onClick="searchbox(0)" />
+<select class="input">
+  <option value="1">所有产品类别</option>
+  <option value="2">家具</option>
+  <option value="3">家电</option>
+  <option value="4">杂货</option>
+  <option value="5">装饰品</option>
+  <option value="6">文具</option>
+</select>
+<form id="searchform">
+	<input type="search" id="searchfrom1" placeholder="商品名称">
+	<input type="submit" id="searchfrom2" value="搜索" >
+</form>
+</div>
+
+<b style=" position:relative;left:200px;">进一步缩小范围</b>
+<div id="divprice">
+<strong>&nbsp;价格的区间</strong><br>
+<div class="divprices" style="top:20px;"><strong>·</strong>1元～50元</div>
+<div class="divprices" style="top:40px;"><strong>·</strong>51元～100元</div>
+<div class="divprices" style="top:60px;"><strong>·</strong>101元～200元</div>
+<div class="divprices" style="top:80px;"><strong>·</strong>201元～300元</div>
+<div class="divprices" style="top:100px;"><strong>·</strong>300元以上</div>
+<div class="divprices" style="top:120px;"><strong>·全部展示</strong></div>
+</div>
+
+<!--左栏-->
+<div id="divright">
+<c>我们的产品</c>
+<br>
+<d1>
+原木，家具,
+<br>厨房用具，
+<br>美术，装饰品，
+<br>日常必需品。
+</d1>
+<br><br><br>
+
+<c>上班时间</c>
+<br>
+<d1>10:00-19:00</d1>
+<br>
+<d1>每周日休息</d1>
+<br><br><br>
+
+<c>Our Location</c>
+<br>
+<d1>
+上海<br>北京<br>深圳<br>广州<br>成都<br>杭州<br>重庆<br>武汉<br>南京<br>西安<br>沈阳
+</d1>
+</div>
+
+<div class="lists">
+<select class="list">
+  <option value="1">最优推荐</option>
+  <option value="2">销量</option>
+  <option value="3">价格升序</option>
+  <option value="4">价格降序</option>
+  <option value="5">新品</option>
+</select>
+
+<select class="list">
+  <option value="1">现货库存</option>
+  <option value="2">包括没有的库存</option>
+</select>
+
+<img src="../pictures/九宫格1.png" id="jiugongge1" onmouseover="showj('jiugongge3')" onmouseout="hidej('jiugongge3')"/>
+<img src="../pictures/九宫格3.png" id="jiugongge3" onmouseover="showj('jiugongge3')" onmouseout="hidej('jiugongge3')" onclick="show1()"/>
+
+<img src="../pictures/列表1.png" width="30" height="30" id="liebiao1" onmouseover="showl('liebiao3')" onmouseout="hidel('liebiao3')"/>
+<img src="../pictures/列表3.png" id="liebiao3" onmouseover="showl('liebiao3')" onmouseout="hidel('liebiao3')" onclick="show2()" />
+</div>
+<!--内容九宫格-->
+<div id="jiupic">
+
+<div id="div1" class="div1" onclick="window.open('musicbox.html')">
+<img src="../pictures/goods1.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div11">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>木制音乐盒</strong></u></div>
+<div class="g" style="position:relative;left:25px;">手动扭转音乐盒</div>
+<div class="h"><strong>RMB 169</strong></div>
+</div>
+
+<div id="div2" class="div2" onclick="window.open('#')">
+<img src="../pictures/2.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div22">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>铅笔</strong></u></div>
+<div class="g" style="position:relative;left:25px;">自动铅笔 &nbsp;含替换芯</div>
+<div class="h"><strong>RMB 59</strong></div>
+</div>
+
+<div id="div3" class="div3" onclick="window.open('#')">
+<img src="../pictures/3.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div33">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>万年历</strong></u></div>
+<div class="g" style="position:relative;left:25px;">有趣的游戏 &nbsp;滚动日历</div>
+<div class="h"><strong>RMB 369</strong></div>
+</div>
+
+<div id="div4" class="div4" onclick="window.open('#')">
+<img src="../pictures/4.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div44">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>便当盒</strong></u></div>
+<div class="g" style="position:relative;left:25px;">圆角长方形 &nbsp;自然田园风</div>
+<div class="h"><strong>RMB 199</strong></div>
+</div>
+
+<div id="div5" class="div5" onclick="window.open('#')">
+<img src="../pictures/5.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div55">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>坐地灯</strong></u></div>
+<div class="g" style="position:relative;left:25px;">优雅日式 &nbsp;明亮阅读灯</div>
+<div class="h"><strong>RMB 378</strong></div>
+</div>
+
+<div id="div6" class="div6" onclick="window.open('#')">
+<img src="../pictures/6.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div66">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>木碗</strong></u></div>
+<div class="g" style="position:relative;left:25px;">天然木质 &nbsp;进食优选</div>
+<div class="h"><strong>RMB 59</strong></div>
+</div>
+
+<div id="div7" class="div7" onclick="window.open('#')">
+<img src="../pictures/7.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div77">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>挂钟</strong></u></div>
+<div class="g" style="position:relative;left:25px;">有趣猫头鹰 &nbsp;可爱动物时钟</div>
+<div class="h"><strong>RMB 259</strong></div>
+</div>
+
+<div id="div8" class="div8" onclick="window.open('#')">
+<img src="../pictures/8.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div88">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>桌面小风扇</strong></u></div>
+<div class="g" style="position:relative;left:25px;">低噪音 &nbsp;夏日优选</div>
+<div class="h"><strong>RMB 529</strong></div>
+</div>
+
+<div id="div9" class="div9" onclick="window.open('#')">
+<img src="../pictures/9.jpg" width="210" height="210" style="position:relative;left:25px;"/>
+<div class="div99">商品详情</div>
+<br>
+<div class="g" style="position:relative;left:25px;"><u><strong>手表</strong></u></div>
+<div class="g" style="position:relative;left:25px;">木质　多功能计时器</div>
+<div class="h"><strong>RMB 429</strong></div>
+</div>
+
+<div class="page">
+<k>前页</k>&nbsp;&nbsp;<j>1</j>&nbsp;&nbsp;<e>2</e>&nbsp;&nbsp;<e>3</e>&nbsp;&nbsp;<e>...</e>&nbsp;&nbsp;<f>后页</f>
+</div>
+
+</div>
+
+<!--内容列表-->
+<div id="liepic">
+
+<div class="diva" onclick="window.open('musicbox.html')">
+<img src="../pictures/goods1.jpg" width="198" height="198"/>
+<div class="divaa">商品详情</div>
+<br>
+<div class="m" style="position:absolute;left:250px;top:30px;"><u><strong>木制音乐盒</strong></u></div>
+<div class="m" style=" position:absolute;left:250px; top:70px;">与电子声音不同、拥有非常自然而温暖的音色，是一种可以享受真实声音的玩具。只需要轻轻扭动，就可以享受好听的音乐。</div>
+<div class="n"><strong>RMB 169</strong></div>
+</div>
+
+<div class="divb" onclick="window.open('#')">
+<img src="../pictures/6.jpg" width="198" height="198"/>
+<div class="divbb">商品详情</div>
+<br>
+<div class="m" style="position:absolute;left:250px;top:230px;"><u><strong>木碗</strong></u></div>
+<div class="m" style=" position:absolute;left:250px; top:270px;">采用独特的木材并具有独特的美丽木纹。我们研究了最合适的形状，使其更易于使用。</div>
+<div class="n" style="position:absolute; top:225px;"><strong>RMB 59</strong></div>
+</div>
+
+<div class="divc" onclick="window.open('#')">
+<img src="../pictures/8.jpg" width="198" height="198"/>
+<div class="divcc">商品详情</div>
+<br>
+<div class="m" style="position:absolute;left:250px;top:430px;"><u><strong>桌面小风扇</strong></u></div>
+<div class="m" style=" position:absolute;left:250px; top:470px;">一种具有低噪音的风扇，同时它是一种大风量型电扇。由于可以拆卸前板，因此更容易清洁风扇片。</div>
+<div class="n" style="position:absolute; top:425px;"><strong>RMB 529</strong></div>
+</div>
+
+<div class="divd" onclick="window.open('#')">
+<img src="../pictures/5.jpg" width="198" height="198"/>
+<div class="divdd">商品详情</div>
+<br>
+<div class="m" style="position:absolute;left:250px;top:630px;"><u><strong>坐地灯</strong></u></div>
+<div class="m" style=" position:absolute;left:250px; top:670px;">内置弹簧结构，灯具有薄而简单的轴功能。 可以使用顶部表面操作部分上的触摸传感器打开和关闭开关，并且可以通过在点亮状态下保持触摸来进行调光。可以在灯泡颜色和白天颜色之间切换。</div>
+<div class="n" style="position:absolute; top:625px;"><strong>RMB 378</strong></div>
+</div>
+
+<div class="page">
+<k>前页</k>&nbsp;&nbsp;<j>1</j>&nbsp;&nbsp;<e>2</e>&nbsp;&nbsp;<e>3</e>&nbsp;&nbsp;<e>...</e>&nbsp;&nbsp;<f>后页</f>
+</div>
+
+</div>
+</div>
+<!--底部------------------------------------------------>
+<div id="divbottom">
+<div align="center" style="margin-top:20px;">
+<img src="../pictures/logo down.png" width="300" height="130"/>
+</div>
+</div>
+<!--返回顶部--------------------------------------------->
+<a href="#top">
+<div id="divgotop">
+<img src="../pictures/gotop.png" height="30" width="40"/>
+<br>
+<div class="i">Go Top</div>
+</div>
+</a>
+
+<script src="../js/select.js"></script>
+
+</body>
+</html>

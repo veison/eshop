@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+/*顶部logo*/
+#divlogotop{
+	position:absolute;
+	right:200px;
+	top:6px;
+}
+/*返回主页*/
+.goback{
+	width:140px;
+	height:40px;
+	position:absolute;
+	margin-left:50px;
+	margin-top:50px;
+	font-family:Candara;
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+	z-index:999;
+	font-weight:bold;
+	text-shadow:0 0 10px;
+	letter-spacing:1px;
+}
+.goback:hover{
+	cursor:pointer;
+	color:#000;
+}
+/*第二个灰色背景------------------------------------------*/
+#divlogbottom{
+	height:660px;
+	background:#fdfdfc;
+}
+/*主图*/
+#divpich{
+	width:440px;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	left:200px;
+}
+#divpich ul{
+	list-style-type: none;
+}
+ul#ul1{
+	position: relative; 
+}
+#divpich ul il{
+	list-style-type: none;
+}
+
+#divmain{
+	width:450px;
+	height:400px;
+	position:absolute;
+	right:200px;
+	top:160px;
+}
+.div1{
+	position:absolute;
+	right:230px;
+	top:10px;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	font-family:"微软雅黑";
+	color:#979797;
+	font-size:15px;
+	font-weight:bold;
+}
+.div2{
+	position:absolute;
+	right:120px;
+	top:10px;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	font-family:Candara;
+	color:#979797;
+	font-size:17px;
+	font-weight:bold;
+}
+.div3{
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	font-family:"微软雅黑";
+	color:#979797;
+	font-size:15px;
+	font-weight:bold;
+}
+.div1:hover{
+		cursor:pointer;
+		border-bottom:#ebf0ed solid 2px;
+}
+.div2:hover{
+		cursor:pointer;
+		border-bottom:#ebf0ed solid 2px;
+}
+.div3:hover{
+		cursor:pointer;
+		border-bottom:#ebf0ed solid 2px;
+}
+#divmain ul{
+	list-style-type: none;
+}
+#divmain ul li{
+	display: inline-block;
+}
+#div11{
+	background:#fdfdfc;
+	width:450px;
+	height:320px;
+	position:absolute;
+	top:80px;
+	z-index:999;
+}
+#div22{
+	background:#fdfdfc;
+	width:450px;
+	height:320px;
+	position:absolute;
+	top:80px;
+	z-index:998;
+}
+#div33{
+	background:#fdfdfc;
+	width:450px;
+	height:320px;
+	position:absolute;
+	top:80px;
+	z-index:997;
+}
+
+
+
+/*盒子分界线---------------------------------------------*/
+ul{
+	list-style:none;
+}
+li{
+	float:left;
+	letter-spacing:-1px;
+}
+a{
+	text-decoration:none;
+	display:block;
+	padding:0 10px;
+	margin:10px;
+	line-height:20px;
+	color:#979797;
+	text-align:center;
+	font-family:Candara;
+	font-size:16px;
+	padding:0px 1px;
+}
+a:hover{/*鼠标滑过样式*/
+	color:#000;
+}
+p{
+	font-family:"楷体";
+	font-weight:bold;
+	font-size:14px;
+	color:#888888;
+	position:absolute;
+	top:50px;
+	margin-left:300px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mokusei | Login</title>
+<link rel="stylesheet" th:href="@{css/Login.css}"/>
+</head>
+
+<body>
+
+<div class="goback" onclick="window.open('Mokusei.html')">返回主页</div>
+
+<div id="background">
+<img th:src="@{pictures/Loginbackground1.jpg}" width="100%" height="100%"/>
+<div id="login">  
+<h1>Login</h1>  
+<form method="post">  
+<input type="text" required="required" placeholder="用户名" name="u"></input>  
+<input type="password" required="required" placeholder="密码" name="p"></input>  
+<button class="button" type="submit" onclick="window.open('Top page.html')">登录</button>  
+</form>  
+<div class="register" onclick="window.open('register.html')">新用户注册</div>
+</div> 
+</div>
+
+</body>
+</html>

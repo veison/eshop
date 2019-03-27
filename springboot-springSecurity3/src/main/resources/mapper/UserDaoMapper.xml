@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.us.example.dao.UserDao">
+    <resultMap id="userMap" type="com.us.example.domain.SysUser">
+        <id property="id" column="ID"/>
+        <result property="user_name" column="userName"/>
+        <result property="phone" column="phone"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+        <result property="area" column="area"/>
+        <result property="timestamp" column="timestamp"/>
+        <result property="password" column="password"/>
+    </resultMap>
+    <select id="findByUserName" parameterType="String" resultMap="userMap">
+		select u.*
+		,r.password
+		from Sys_User u
+        LEFT JOIN sys_password sru on u.id= sru.user_id
+        where username= #{username}
+	</select>
+</mapper>
